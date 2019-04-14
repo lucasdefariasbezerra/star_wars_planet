@@ -1,11 +1,6 @@
-# touristic points front end
-This is a small project that is about a CRUD for touristic points registering
+# star wars planet
+This UI is written in React an Redux
 
-The motivation for creating this project is consuming data from a RESTfull api that catalogs touristic points created 
-by a network of collaborators.
-The tecnologies used is this project are React 16, Redux for data management, and Semantic UI for styling.
-In order to have the project working on your local machine you mus have the last stable Node.js version 
-and Yarn dependency management.
 
 The steps to have the project is.
  - Download Node and Yarn.

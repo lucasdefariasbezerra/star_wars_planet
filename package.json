@@ -5,6 +5,9 @@
     "collectCoverageFrom": [
       "**/*.{js,jsx}"
     ],
+    "coveragePathIgnorePatterns": [
+      "<rootDir>/src/semantic"
+    ],
     "setupFiles": [
       "./setup.js"
     ],

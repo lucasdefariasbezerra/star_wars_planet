@@ -1,6 +1,6 @@
 import React from 'react';
 import Linker from '../components/shared/linker';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import { shallow } from 'enzyme';
 
 let wrapper;

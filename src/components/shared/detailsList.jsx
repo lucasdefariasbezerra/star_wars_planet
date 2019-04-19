@@ -6,7 +6,6 @@ import ListItem from './listItem.jsx';
 import '../../template/style.css';
 
 const mapItems = (list) => {
-    console.log('list ', list);
     return list.map(item => (<ListItem key={item.title} item={item} />));
 };
 

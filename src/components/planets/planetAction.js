@@ -1,3 +1,4 @@
+
 export const fetchData = (id) => {
     const url = `https://swapi.co/api/planets/${id}/`;
     return dispatch => {
@@ -5,7 +6,6 @@ export const fetchData = (id) => {
             .then(body => {
                 const { films } = body;
                 dispatch(mapPlanet(body));
-                console.log(' films ', films);
                 if (films.length > 0) {
                     const requestList = mapRequest(films);
                     dispatch(mapFilms(requestList));
@@ -26,7 +26,6 @@ export const mapPlanet = (planet) => {
 };
 
 export const mapFilms = (films) => {
-    console.log('films promise ', films);
     return dispatch => {
         films.forEach(film => {
             dispatch(resolvePromise(film, 'FETCH_FILMS', 'obj'));
@@ -42,7 +41,6 @@ export const clearFilms = () => {
 };
 
 const resolvePromise = (fetch, action, field) => {
-    console.log('on resolve');
     return fetch.then(result => result.json())
     .then(data => {
         return {

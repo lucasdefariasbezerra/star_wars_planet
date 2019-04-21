@@ -9,7 +9,7 @@ import { fetchData, clearFilms } from './planetAction';
 import { getRandom } from '../utils/utils';
 
 
-class PlanetFeed extends Component {
+export class PlanetFeed extends Component {
     static propTypes = {
         fetchData: PropTypes.func,
         clearFilms: PropTypes.func,
@@ -33,6 +33,7 @@ class PlanetFeed extends Component {
     }
 
     handleFetchData = () => {
+        console.log('cai aqui');
         const { fetchData, clearFilms } = this.props;
         const id = getRandom(61);
         clearFilms();

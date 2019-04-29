@@ -35,8 +35,7 @@ export const mapFilms = (films) => {
 
 export const clearFilms = () => {
     return {
-        type: 'CLEAR_FILMS',
-        data: []
+        type: 'CLEAR_FILMS'
     };
 };
 
